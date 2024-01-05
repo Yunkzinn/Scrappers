@@ -1,6 +1,21 @@
 import requests
 from bs4 import BeautifulSoup
 
+# Função para imprimir o desenho ASCII "ASN GRABBER"
+def imprimir_banner():
+    banner = """
+            _____ _   _       _____ _____            ____  ____  ______ _____  
+     /\    / ____| \ | |     / ____|  __ \     /\   |  _ \|  _ \|  ____|  __ \ 
+    /  \  | (___ |  \| |    | |  __| |__) |   /  \  | |_) | |_) | |__  | |__) |
+   / /\ \  \___ \| . ` |    | | |_ |  _  /   / /\ \ |  _ <|  _ <|  __| |  _  / 
+  / ____ \ ____) | |\  |    | |__| | | \ \  / ____ \| |_) | |_) | |____| | \ \ 
+ /_/    \_\_____/|_| \_|     \_____|_|  \_\/_/    \_\____/|____/|______|_|  \_|
+ 
+ Developed by Yunkzinn                                                                                                                                                             
+    """
+
+    print(banner)
+
 def obter_informacoes_asn(nome_empresa):
     # URL do site
     url = f"https://bgp.he.net/search?search%5Bsearch%5D={nome_empresa}&commit=Search"
@@ -31,6 +46,9 @@ def obter_informacoes_asn(nome_empresa):
     else:
         print(f"Erro ao acessar o site. Código de status: {response.status_code}")
         return None
+
+# Imprimir o banner quando o script é executado
+imprimir_banner()
 
 # Solicitar nome da empresa ao usuário
 nome_empresa = input("Digite o nome da empresa: ")

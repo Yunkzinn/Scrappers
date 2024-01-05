@@ -1,6 +1,6 @@
-# Ferramenta de Obtenção de Informações sobre ASN
+# ASN Grabber
 
-Esta ferramenta permite obter informações sobre Números de Sistemas Autônomos (ASNs) associados a uma empresa específica a partir do site [bgp.he.net](https://bgp.he.net/).
+Esta ferramenta é um scrapper que permite obter informações sobre ASNs associados a uma empresa específica a partir do site [bgp.he.net](https://bgp.he.net/).
 
 ## Como Usar
 
